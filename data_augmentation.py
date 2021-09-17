@@ -4,7 +4,7 @@ import os
 
 
 if __name__ == '__main__':
-    data_path = '../data/Task2_processed/Preprocessed_v2/'
+    data_path = './data/Task2_processed/Preprocessed_v2/'
     files = os.listdir(data_path)
     files = [x for x in files if len(x.split('_')) == 1]
     aug_num = 10
