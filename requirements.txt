@@ -1,0 +1,13 @@
+evalutils==0.2.4
+scikit-learn
+scipy
+torch
+nibabel
+SimpleITK
+numpy
+pandas
+imageio
+nnunet
+tqdm
+batchgenerators
+medpy
