@@ -43,8 +43,8 @@ def crop_bbox(array, bounding_box, margin):
 
 
 if __name__ == '__main__':
-    data_path = '../data/Task2/'
-    save_path = '../data/Task2_processed/Preprocessed_v2/'
+    data_path = './data/Task2/'
+    save_path = './data/Task2_processed/Preprocessed_v2/'
     if not os.path.exists(save_path):
         os.makedirs(save_path)
 
