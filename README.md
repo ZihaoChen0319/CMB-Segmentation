@@ -3,8 +3,12 @@ A Multi-stage Framework for Cerebral Microbleeds(CMBs) Detection and Segmentatio
 
 
 ## Setup
-Clone this respository
+* Clone this respository
 ```
 git clone https://github.com/zihaochen0319/CMB-Segmentation
 cd CMB-Segmentation
+```
+* Check dependencies in requirements.txt
+```
+pip install -r requirements.txt
 ```
