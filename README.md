@@ -39,6 +39,6 @@ python train_discri.py -f FOLD
 ```
 python train_unet.py -f FOLD
 ```
-* Specify the model name in each training file
 
 ## Evaluation
+* Specify the names of screening, discrimination and segmentation model 
