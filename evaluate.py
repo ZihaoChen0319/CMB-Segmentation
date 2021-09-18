@@ -27,7 +27,7 @@ if __name__ == '__main__':
     args.unet = 'unet'
 
     # path define
-    data_path = '../data/Task2_processed/Preprocessed_v2/'
+    data_path = './data/Task2_processed/Preprocessed_v2/'
     dataset_path = './dataset/'
     screen_model_path = './models/%s/' % args.screen_model
     discri_model_path = './models/%s/' % args.discri_model
