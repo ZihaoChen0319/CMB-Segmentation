@@ -14,12 +14,12 @@ pip install -r requirements.txt
 
 ## Data Preparation
 * Access the data from [VALDO 2021](https://valdo.grand-challenge.org/Description/) and save it in ```./data/Task2/```.
-* To preprocess the raw data, run 
+* To preprocess the raw data, run:
 ```
 python data_preprocess_v2.py
 ```
 The processed data would be saved in ```./data/Task2_processed/Preprocessed_v2/```.
-* (Optional) To augment training data, run
+* (Optional) To augment training data, run:
 ```
 python data_augmentation.py
 ```
@@ -29,17 +29,20 @@ python data_augmentation.py
 This framework consists of three stages: screening, discrimination and segmentation. Each stage should be trained independently.
 * To train screening network, run:
 ```
-python train_screen.py -f FOLD
+python train_screen.py -f FOLD -sn SCREEN_NAME
 ```
 * To train discrimination network, run:
 ```
-python train_discri.py -f FOLD
+python train_discri.py -f FOLD -sn SCREEN_NAME -dn DISCRI_NAME
 ```
 * To train segmentation network, run:
 ```
-python train_unet.py -f FOLD
+python train_unet.py -f FOLD -sn SCREEN_NAME -dn DISCRI_NAME -un UNET_NAME
 ```
-* The trained models are saved in ```./models
 
 ## Evaluation
-* Specify the names of screening, discrimination and segmentation model 
+Run:
+```
+python evaluate.py -f FOLD -sn SCREEN_NAME -dn DISCRI_NAME -un UNET_NAME
+```
+The final segmentation output and the preprocessed volume would be saved in ```./results```.
