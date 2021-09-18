@@ -2,7 +2,7 @@
 ![Framework](./figure/framework_overall.png)
 
 ## Setup
-* Clone this respository
+* Clone this repository
 ```
 git clone https://github.com/zihaochen0319/CMB-Segmentation
 cd CMB-Segmentation
@@ -17,3 +17,6 @@ pip install -r requirements.txt
 * Proprocess the raw data, run ```python ./data_preprocess_v2.py```. The processed data would be saved in ```./data/Task2_processed/Preprocessed_v2/```.
 * (Optional) Run ```python ./data_augmentation.py``` to augment data and set ```aug_num``` in configuration of ```train_xxx.py``` to a non-zero value. Then the augmentation data would be used for training.
 * The division of training and validation data can be modified in ```./fold_division.py```.
+
+## Train
+This framework consists of three stages: screening, discrimination and segmentation. Each stage should be trained independently
