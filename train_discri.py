@@ -9,17 +9,19 @@ os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 
 
 if __name__ == '__main__':
-    # path define
-    data_path = './data/Task2_processed/Preprocessed_v2/'
-    model_save_path = './models/discrimination/'
-    screen_model_path = './models/screening/'
-    dataset_path = './dataset/'
-
     # cmd parser
     parser = argparse.ArgumentParser()
     parser.add_argument('-f', '--fold', type=int, default=0, help='choose the fold(0,1,2,3,4) you want to train')
+    parser.add_argument('-sn', '--screen_name', type=str, default='screening', help='name of screen model')
+    parser.add_argument('-dn', '--discri_name', type=str, default='discrimination', help='name of discrimination model')
     args = parser.parse_args()
     print('Training fold: %d' % args.fold)
+
+    # path define
+    data_path = '../data/Task2_processed/Preprocessed_v2/'
+    model_save_path = './models/%s/' % args.discri_name
+    screen_model_path = './models/%s/' % args.screen_name
+    dataset_path = './dataset/'
 
     # some config
     config = {

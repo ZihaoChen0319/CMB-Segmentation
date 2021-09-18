@@ -18,17 +18,17 @@ if __name__ == '__main__':
     parser.add_argument('-f', '--fold', type=int, default=0, help='choose the fold(0,1,2,3,4) you want to train')
     parser.add_argument('-dt', '--discri_threshold', type=float, default=0.5, help='discrimination model threshold')
     parser.add_argument('-st', '--screen_threshold', type=float, default=0.1, help='screen model threshold')
-    parser.add_argument('-dm', '--discri_model', type=str, default='discrimination', help='name of discrimination model')
-    parser.add_argument('-sm', '--screen_model', type=str, default='screening', help='name of screen model')
-    parser.add_argument('-u', '--unet', type=str, default='unet', help='name of unet model')
+    parser.add_argument('-dn', '--discri_name', type=str, default='discrimination', help='name of discrimination model')
+    parser.add_argument('-sn', '--screen_name', type=str, default='screening', help='name of screen model')
+    parser.add_argument('-un', '--unet_name', type=str, default='unet', help='name of unet model')
     args = parser.parse_args()
 
     # path define
     data_path = './data/Task2_processed/Preprocessed_v2/'
     dataset_path = './dataset/'
-    screen_model_path = './models/%s/' % args.screen_model
-    discri_model_path = './models/%s/' % args.discri_model
-    unet_model_path = './models/%s/' % args.unet
+    screen_model_path = './models/%s/' % args.screen_name
+    discri_model_path = './models/%s/' % args.discri_name
+    unet_model_path = './models/%s/' % args.unet_name
     pred_save_path = './results/'
     if not os.path.exists(pred_save_path):
         os.makedirs(pred_save_path)
