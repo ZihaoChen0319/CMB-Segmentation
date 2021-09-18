@@ -27,19 +27,19 @@ python data_augmentation.py
 
 ## Training
 This framework consists of three stages: screening, discrimination and segmentation. Each stage should be trained independently.
-To train screening network, run:
+* To train screening network, run:
 ```
 python train_screen.py -f FOLD -sn SCREEN_NAME
 ```
-To train discrimination network, run:
+* To train discrimination network, run:
 ```
 python train_discri.py -f FOLD -sn SCREEN_NAME -dn DISCRI_NAME
 ```
-To train segmentation network, run:
+* To train segmentation network, run:
 ```
 python train_unet.py -f FOLD -sn SCREEN_NAME -dn DISCRI_NAME -un UNET_NAME
 ```
-```FOLD``` is the fold index(0, 1, 2, 3, 4 under 5-fold cross-validation) you want to train. ```SCREEN_NAME``` ```DISCRI_NAME``` ```UNET_NAME``` should be replaced by the names of model you want to use. The trained models would be saved in ```./models/MODEL_NAME/FOLD/```.
+* ```FOLD``` is the fold index(0, 1, 2, 3, 4 under 5-fold cross-validation) you want to train. ```SCREEN_NAME``` ```DISCRI_NAME``` ```UNET_NAME``` should be replaced by the names of model you want to use. The trained models would be saved in ```./models/MODEL_NAME/FOLD/```.
 
 ## Evaluation
 Run:
