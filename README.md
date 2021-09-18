@@ -14,4 +14,4 @@ pip install -r requirements.txt
 ```
 
 ## Data Preparation
-* Access the dataset in [VALDO 2021](https://valdo.grand-challenge.org/Description/).
+* Raw data is avaiable in [VALDO 2021](https://valdo.grand-challenge.org/Description/). Download the data and save it in ```./data/Task2/```.
