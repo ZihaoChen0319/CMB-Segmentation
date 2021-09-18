@@ -39,6 +39,7 @@ python train_discri.py -f FOLD
 ```
 python train_unet.py -f FOLD
 ```
+* The trained models are saved in ```./models
 
 ## Evaluation
 * Specify the names of screening, discrimination and segmentation model 
