@@ -23,7 +23,7 @@ The processed data would be saved in ```./data/Task2_processed/Preprocessed_v2/`
 ```
 python data_augmentation.py
 ```
-and set ```aug_num``` in configuration of ```train_xxx.py``` to a non-zero value. Then the augmentation data would be used for training.
+The ```aug_num``` in configuration of ```./train_xxx.py``` should correspond to the number of augmentation here.
 * The division of training and validation data can be modified in ```./fold_division.py```.
 
 ## Train
