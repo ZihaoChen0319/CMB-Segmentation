@@ -12,3 +12,6 @@ cd CMB-Segmentation
 ```
 pip install -r requirements.txt
 ```
+
+## Data Preparation
+* Access the dataset in [VALDO 2021](https://valdo.grand-challenge.org/Description/).
