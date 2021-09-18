@@ -49,10 +49,12 @@ python evaluate.py -f FOLD -sn SCREEN_NAME -dn DISCRI_NAME -un UNET_NAME
 The final segmentation outputs and their corresponding preprocessed volume would be saved in ```./results/```.
 
 ## Acknowledgement
-* This repository is based on paper:
+This repository is based on paper:
 
 Q. Dou et al., "Automatic Detection of Cerebral Microbleeds From MR Images via 3D Convolutional Neural Networks," in IEEE Transactions on Medical Imaging, vol. 35, no. 5, pp. 1182-1195, May 2016, doi: 10.1109/TMI.2016.2528129. \[[paper](https://ieeexplore.ieee.org/abstract/document/7403984)\]
-* Part of the code in this repository are copied or revised from:
+
+
+Part of the code in this repository are copied or revised from:
 
 [nnU-Net](https://github.com/MIC-DKFZ/nnUNet)
 
