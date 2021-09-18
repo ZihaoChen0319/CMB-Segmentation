@@ -23,7 +23,6 @@ The processed data would be saved in ```./data/Task2_processed/Preprocessed_v2/`
 ```
 python data_augmentation.py
 ```
-The ```aug_num``` in configuration of ```./train_xxx.py``` should correspond to the number of augmentation here.
 * The division of training and validation data can be modified in ```./fold_division.py```.
 
 ## Train
@@ -32,4 +31,11 @@ This framework consists of three stages: screening, discrimination and segmentat
 ```
 python train_screen.py -f FOLD
 ```
-* 
+* To train discrimination network, run:
+```
+python train_discri.py -f FOLD
+```
+* To train segmentation network, run:
+```
+python train_unet.py -f FOLD
+```
