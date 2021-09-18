@@ -1,7 +1,5 @@
 # CMB-Segmentation
-A Multi-stage Framework for Cerebral Microbleeds(CMBs) Detection and Segmentation
 ![Framework](./figure/framework_overall.png)
-
 
 ## Setup
 * Clone this respository
@@ -15,4 +13,4 @@ pip install -r requirements.txt
 ```
 
 ## Data Preparation
-* Raw data is avaiable in [VALDO 2021](https://valdo.grand-challenge.org/Description/). Download the data and save it in ```./data/Task2/```.
+* Access the data from [VALDO 2021](https://valdo.grand-challenge.org/Description/) and save it in ```./data/Task2/```.
