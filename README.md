@@ -39,11 +39,11 @@ python train_discri.py -f FOLD -sn SCREEN_NAME -dn DISCRI_NAME
 ```
 python train_unet.py -f FOLD -sn SCREEN_NAME -dn DISCRI_NAME -un UNET_NAME
 ```
-* ```FOLD``` is the fold index(0, 1, 2, 3, 4 under 5-fold cross-validation) you want to train. ```SCREEN_NAME``` ```DISCRI_NAME``` ```UNET_NAME``` should be replaced by the names of model you want to use. The trained models would be saved in ```./models/```.
+* ```FOLD``` is the fold index(0, 1, 2, 3, 4 under 5-fold cross-validation) you want to train. ```SCREEN_NAME``` ```DISCRI_NAME``` ```UNET_NAME``` should be replaced by the names of model you want to use. The trained models would be saved in ```./models/MODEL_NAME/FOLD/```.
 
 ## Evaluation
 Run:
 ```
 python evaluate.py -f FOLD -sn SCREEN_NAME -dn DISCRI_NAME -un UNET_NAME
 ```
-The final segmentation output and the preprocessed volume would be saved in ```./results```.
+The final segmentation output and the preprocessed volume would be saved in ```./results/```.
