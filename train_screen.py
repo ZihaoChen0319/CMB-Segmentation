@@ -10,7 +10,7 @@ os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 
 if __name__ == '__main__':
     # path define
-    data_path = '../data/Task2_processed/Preprocessed_v2/'
+    data_path = './data/Task2_processed/Preprocessed_v2/'
     model_save_path = './models/screening/'
     dataset_path = './dataset/'
 
