@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 ## Data Preparation
 * Access the data from [VALDO 2021](https://valdo.grand-challenge.org/Description/) and save it in ```./data/Task2/```.
-* To proprocess the raw data, run 
+* To preprocess the raw data, run 
 ```
 python data_preprocess_v2.py
 ```
@@ -25,7 +25,7 @@ python data_augmentation.py
 ```
 * The division of training and validation data can be modified in ```./fold_division.py```.
 
-## Train
+## Training
 This framework consists of three stages: screening, discrimination and segmentation. Each stage should be trained independently.
 * To train screening network, run:
 ```
@@ -39,3 +39,6 @@ python train_discri.py -f FOLD
 ```
 python train_unet.py -f FOLD
 ```
+* Specify the model name in each training file
+
+## Evaluation
