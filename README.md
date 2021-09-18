@@ -1,5 +1,6 @@
 # CMB-Segmentation
 A Multi-stage Framework for Cerebral Microbleeds(CMBs) Detection and Segmentation
+![Framework](./figure/framework_overall.png)
 
 
 ## Setup
