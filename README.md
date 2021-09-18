@@ -14,5 +14,9 @@ pip install -r requirements.txt
 
 ## Data Preparation
 * Access the data from [VALDO 2021](https://valdo.grand-challenge.org/Description/) and save it in ```./data/Task2/```
-* Run ```python ./data_preprocess_v2.py``` to preprocess raw data. The processed data would be saved in ```./data/Task2_processed/Preprocessed_v2/```
+* Proprocess the raw data, run
+```
+python ./data_preprocess_v2.py
+```
+The processed data would be saved in ```./data/Task2_processed/Preprocessed_v2/```
 * (Optional) Run ```python ./data_augmentation.py/``` to augment data and set ```aug_num``` in configuration of ```train_xxx.py``` to a non-zero value. Then the augmentation data would be used for training.
