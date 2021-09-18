@@ -55,5 +55,7 @@ Q. Dou et al., "Automatic Detection of Cerebral Microbleeds From MR Images via 3
 * Part of the code in this repository are copied or revised from:
 
 [nnU-Net](https://github.com/MIC-DKFZ/nnUNet)
+
 [Loss functions for image segmentation](https://github.com/JunMa11/SegLoss)
+
 [Focal-Loss-Pytorch](https://github.com/yatengLG/Focal-Loss-Pytorch)
