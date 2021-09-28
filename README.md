@@ -1,5 +1,5 @@
 # CMB-Segmentation
-We attended the [VALDO 2021 Challenge (MICCAI 2021)](https://valdo.grand-challenge.org/) and won <b>3<sup>rd</sup> prize</b> award.
+We attended the [VALDO 2021 Challenge (MICCAI 2021)](https://valdo.grand-challenge.org/) and won <b>3<sup>rd</sup> prize</b> in Task2: Segmentation of Cerebral Microbleeds.
 
 ## Framework
 ![Framework](./figure/framework_overall.png)
