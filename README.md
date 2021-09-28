@@ -1,4 +1,7 @@
 # CMB-Segmentation
+We attended the [VALDO 2021 Challenge (MICCAI 2021)](https://valdo.grand-challenge.org/) and won <b>3<sup>rd</sup> prize</b> award.
+
+## Framework
 ![Framework](./figure/framework_overall.png)
 
 ## Setup
@@ -54,4 +57,7 @@ This repository is based on paper:
 Q. Dou et al., "Automatic Detection of Cerebral Microbleeds From MR Images via 3D Convolutional Neural Networks," in IEEE Transactions on Medical Imaging, vol. 35, no. 5, pp. 1182-1195, May 2016, doi: 10.1109/TMI.2016.2528129. \[[paper](https://ieeexplore.ieee.org/abstract/document/7403984)\]
 
 
-Part of the code in this repository are copied or revised from: [nnU-Net](https://github.com/MIC-DKFZ/nnUNet), [Loss functions for image segmentation](https://github.com/JunMa11/SegLoss) and [Where is VALDO](https://github.com/WhereIsValdo/valdo-eval-2021).
+Part of the code in this repository are copied or revised from: 
+* [nnU-Net](https://github.com/MIC-DKFZ/nnUNet)
+* [Loss functions for image segmentation](https://github.com/JunMa11/SegLoss) 
+* [Where is VALDO](https://github.com/WhereIsValdo/valdo-eval-2021)
